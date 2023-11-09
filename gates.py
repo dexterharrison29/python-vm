@@ -13,7 +13,7 @@ class LogicGates:
         return False
     def nandg(i1, i2):
         t1 = LogicGates.andg(i1, i2)
-        t2 = LogicGates.notg(t1)
+        return LogicGates.notg(t1)
     def xorg(i1, i2):
         t1 = LogicGates.notg(i1)
         t2 = LogicGates.notg(i2)
