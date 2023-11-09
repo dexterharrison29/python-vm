@@ -9,4 +9,4 @@ Added simple ALU. All functions for now use the adder circuit. I'm not gonna spe
 # 0.1.1; 2023-11-7 18:15 EST
 Fixed problem with xor gates
 # 0.1.0; 2023-11-7 16:00 EST
-Added LogicGates
+Added Logic Gates
