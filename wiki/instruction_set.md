@@ -40,7 +40,6 @@ Full instructions are a combination of 2-3 values; The first being the partial i
     03: dx; data register; 
 ### Pointer Registers
     04: ip; program counter register
-    05: sp; stack pointer register
 # Example Program
 ### Here is an assembly program
 I have this program stored in a folder called programs; hello_world.asm;

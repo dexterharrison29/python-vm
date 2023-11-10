@@ -20,3 +20,6 @@ class LogicGates:
         t3 = LogicGates.andg(i1, t2)
         t4 = LogicGates.andg(t1, i2)
         return LogicGates.org(t3, t4)
+    def norg(i1, i2):
+        t1 = LogicGates.org(i1, i2)
+        return LogicGates.notg(t1)
