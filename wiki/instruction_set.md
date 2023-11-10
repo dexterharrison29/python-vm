@@ -4,10 +4,10 @@ this is a simple instruction set for machine instructions(commonly referred to a
 Full instructions are a combination of 2-3 values; The first being the partial instruction, the second being the register; example: 'add ax 5'; this adds the value 5 to the ax register;  
 # Partial Instructions
 ### LOGIC INSTRUCTIONS  
-    0: and  
-    1: or  
-    2: not  
-    3: xor  
+    00: and  
+    01: or  
+    02: not  
+    03: xor  
 
 ### Math Functions
     04: add  
@@ -15,16 +15,50 @@ Full instructions are a combination of 2-3 values; The first being the partial i
 ### Store Functions
     06: mov  
     07: lda  
-    08: sta  
+    08: sta
+    09: lab
+    0A: cll
 ### Comparisons
-    09: cmp  
-    0A: jeq  
-    0B: jls  
-    0C: jgt  
-    0D: jge  
-    0E: jle  
+    0B: cmp  
+    0C: jeq  
+    0D: jls  
+    0E: jgt  
     0F: jge  
+    10: jle  
+    11: jge  
 ### Other
-    10: jmp
-    11: hlt
-    12: out
+    12: jmp
+    13: hlt
+    14: oti
+    15: ota
+
+# Registers
+### Data Registers
+    00: ax; Accumulator; easy math storage
+    01: bx; base register; used for indirect addressing
+    02: cx; count register; primarily used to count the number of times a loop has run.
+    03: dx; data register; 
+### Pointer Registers
+    04: ip; program counter register
+    05: sp; stack pointer register
+# Example Program
+### Here is an assembly program
+I have this program stored in a folder called programs; hello_world.asm;
+    lab 0x000000, 0x00000C
+    mov 0x000000, 72 ; H
+    mov 0x000001, 101; e
+    mov 0x000002, 108; l
+    mov 0x000003, 108; l
+    mov 0x000004, 111; o
+    mov 0x000005, 44 ; ,
+    mov 0x000006, 32 ;  
+    mov 0x000007, 119; w
+    mov 0x000008, 111; o
+    mov 0x000009, 114; r
+    mov 0x00000A, 108; l
+    mov 0x00000B, 100; d
+    mov 0x00000C, 10 ; Newline character
+    ota lab ; outputs ascii from every memory address stored in the label
+    cll ; clears the label
+    hlt ; ends the program
+
