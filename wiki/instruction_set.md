@@ -43,20 +43,20 @@ Full instructions are a combination of 2-3 values; The first being the partial i
 # Example Program
 ### Here is an assembly program
 I have this program stored in a folder called programs; hello_world.asm;
-    lab 0x000000, 0x00000C
-    mov 0x000000, 72 ; H
-    mov 0x000001, 101; e
-    mov 0x000002, 108; l
-    mov 0x000003, 108; l
-    mov 0x000004, 111; o
-    mov 0x000005, 44 ; ,
-    mov 0x000006, 32 ;  
-    mov 0x000007, 119; w
-    mov 0x000008, 111; o
-    mov 0x000009, 114; r
-    mov 0x00000A, 108; l
-    mov 0x00000B, 100; d
-    mov 0x00000C, 10 ; Newline character
+    lab 0x0000, 0x000C
+    mov 0x0000, 72 ; H
+    mov 0x0001, 101; e
+    mov 0x0002, 108; l
+    mov 0x0003, 108; l
+    mov 0x0004, 111; o
+    mov 0x0005, 44 ; ,
+    mov 0x0006, 32 ;  
+    mov 0x0007, 119; w
+    mov 0x0008, 111; o
+    mov 0x0009, 114; r
+    mov 0x000A, 108; l
+    mov 0x000B, 100; d
+    mov 0x000C, 10 ; Newline character
     ota lab ; outputs ascii from every memory address stored in the label
     cll ; clears the label
     hlt ; ends the program

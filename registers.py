@@ -33,3 +33,9 @@ def instruction_pointer(data, enable):
         instruction_pointer_value=e.register(data, enable)
     else:
         instruction_pointer_value=e.register(data, enable, instruction_pointer_value)
+def instruction_register(data, enable):
+    global instruction_register_value
+    if instruction_register_value is None:
+        instruction_register_value=e.register(data, enable)
+    else:
+        instruction_register_value=e.register(data, enable, instruction_register_value)
