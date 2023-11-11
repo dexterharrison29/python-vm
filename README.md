@@ -1,9 +1,10 @@
 # python-vm
 This isn't designed to emulate any specific hardware set. It is not a functional emulator. It is simply a virtual machine written in python as a fun personal project. I will update yall as i go
   
-  
 
 Update Log: This is a description of the updates
+# 0.5.0; 2023-11-11 13:00 EST
+added ram
 # 0.4.0; 2023-11-10 19:00 EST
 added registers
 # 0.3.0; 2023-11-9 20:15 EST
