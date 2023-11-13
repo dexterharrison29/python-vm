@@ -3,6 +3,8 @@ This isn't designed to emulate any specific hardware set. It is not a functional
   
 
 Update Log: This is a description of the updates
+# 0.5.1; 2023-11-12 20:00 EST
+made ram more rammy
 # 0.5.0; 2023-11-11 13:00 EST
 added ram
 # 0.4.0; 2023-11-10 19:00 EST
